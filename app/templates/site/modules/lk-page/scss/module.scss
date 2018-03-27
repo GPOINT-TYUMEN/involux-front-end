@@ -1,0 +1,798 @@
+$grey: #b9b9b9;
+$grey2: #747373; 
+$grey3: #504e4e;
+$grey4: #666666;
+$grey5: #444444;
+$grey6: #dadada;
+$grey7: #e8e8e8;
+$grey8: #f2f3f5;
+$grey9: #d8d8d8;
+$grey10: #f3f3f3;
+$grey11: #dbdbdb;
+$grey12: #545454;
+$grey13: #a4a4a4;
+$grey14: #6b6b6b;
+$grey15: #676769;
+$grey16: #4f4f4f;
+$grey17: #3c3c3c;
+$grey18: #5f5f5f;
+$grey19: #d6d6d6;
+$grey20: #393939;
+$grey21: #f1eef1;
+$grey22: #868686;
+$grey23: #dddddd;
+$grey24: #616161;
+$grey25: #eeeeee;
+$grey26: #e9eaec;
+$grey27: #c6c7c9;
+
+$blue: #5db8de; 
+$blue2: #385766;
+$blue3: #d8eef7;
+$blue4: #4e9dbe;
+$blue5 : #4683c4;
+$blue6 : #5eb8de;
+$black2: #231c1a;
+$BaseColor: #62b445;
+$BaseFont: #000;
+$BaseFont2: #fff;
+$BaseFont3: #666;
+$BaseFontUrl: #0725aa;
+$rose: #ea7893;
+$red2: #fe3c3c;
+$orange: #e8b331;
+
+$GlobalBGColor:#fff;
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    /* display: none; */
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal {
+    background-color: rgba(0, 0, 0, 0.41);
+}
+
+[class*="user-modal"] .frost {
+    width: 100%;
+    float: left;
+    padding-bottom: 60px;
+}
+[class*="user-modal"] .modal-contents {
+    display: block;
+    width: 580px;
+    padding: 60px;
+}
+
+.modal.default {
+	[class^=container-form] {
+		width: 100% !important;		
+	}
+
+}
+
+.sec-lkabinet{
+	background: $grey23;
+	font-family: $ProximaRegular;
+	// padding-top: 30px;
+	padding-bottom: 30px;
+	.data-user {
+		text-align: justify;
+	}
+
+	[class^="cell-"] {
+		display: inline-block;
+		min-height: 200px;
+		background: $GlobalBGColor;
+		width: 100%;
+		margin-top: 30px;
+		@include radius(10px);
+	}	
+
+
+		.half {
+			max-width: 530px;
+			padding: 30px;
+			.up-cell-info{
+				width: 100%;
+				height: 50px;
+				float:left;
+				border-bottom: 1px solid #b4b3b2;	
+
+				.pic {
+					width: 60px;
+					height: 60px;
+					float: left;
+					img{
+						height: 30px;
+						width: 30px;
+					}
+				}
+
+				.user-title-cell{
+					width: 250px;
+				    height: 60px;
+				    font-size: 23px;
+				    font-weight: bold;
+				    float: left;
+				}
+				.user-info{
+					width: 70%;
+				    height: 40px;
+				    font-size: 15px;
+				    margin-top: 20px;
+				    font-weight: bold;
+				    float: left;
+				    font-family: $ProximaRegular;
+				}
+				.user-info-edit{
+					width: 30%;
+				    height: 20px;
+				    cursor: pointer;
+				    font-size: 15px;
+				    text-align: right;
+				    color: $grey24;
+				    text-decoration: underline;
+				    margin-top: 20px;
+				    float: left;
+				    font-family: $ProximaRegular;
+				}
+				.user-info-mail{
+					width: 100%;
+				    height: 40px;
+				    font-size: 15px;
+				    font-weight: bold;
+				    float: left;
+				    font-family: $ProximaRegular;
+				}
+			}
+		}
+
+	.data-user:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+
+	.zakazi-info{
+		height: 45px;
+		width: 50%;
+		float: left;
+		@include radius-lt(10px);
+		@include radius-rt(10px); 
+		text-align: center;
+		display: flex;	
+		font-size: 18px;
+		font-weight: bold;
+		div{
+			margin: auto;
+		}
+	}
+
+	.active{
+		background: $grey25;
+	}
+
+	.window-tablet {
+		min-height: 250px;
+		width: 100%;
+		display: none;
+		padding: 20px;
+		@include radius-lb(10px);
+		@include radius-rb(10px); 
+		float: left;
+		.cel-tablet{
+			width: 16.6%;
+			float: left;
+			border-bottom: 1px solid;
+			height:40px;
+		}
+
+		.items_values{
+			width: 100%;
+			a {
+				display: inline-block;
+				float:right;
+				padding-right: 10px;
+			}
+
+			.cel-tablets:last-child {
+				a {
+					padding-right: 0;
+				}
+			}
+		}
+		.cel-tablets{
+			width: 16.6%;
+			margin-top: 20px;
+			float: left;
+			font-weight: bold;
+			height:40px;
+		}
+	}
+
+	.window-tablet.active {
+		display: block;
+	}
+}
+
+
+
+// МОДАЛКА
+[class*="user-modal"]{
+	.male-female{
+		width: 100%;
+		float: left;
+	}
+	.bottom-0{
+		padding-bottom: 0px !important;
+	}
+	.mb-0{
+		height: 70px !important;
+	}
+	.user-form-edit{
+		padding-bottom: 0px;
+		.form-title{
+			font-family: "ProximaNova-Regular";
+		    font-size: 23px;
+		    font-weight: bold;
+		    color: #292424;
+		    text-align: left;
+		}	
+	}
+	.dostavka{
+		.form-title{
+			font-family: $ProximaRegular;
+		    font-size: 34px;
+		    color: #292424;
+		    text-align: center;
+		}
+	}
+
+	.frost{
+		width:100%;
+		float:left;
+		padding-bottom: 60px;
+	}
+
+	.sex-val {
+		display: inline-block;
+		margin-left: 0px;
+		width: 80%;
+		font-size: 18px;
+		vertical-align: top;
+		font-family: $ProximaRegular;
+		color: $grey3;
+	}
+	.sex-cell{
+		width: 50%;
+		float:left;
+	}
+	//РАДИО 
+	.radio {
+		position: relative;
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border: 1px solid $grey;
+		background-color: $GlobalBGColor;
+		text-align: center;
+		cursor: pointer;
+		margin-top: 3px;
+		@include radius;
+	}	
+
+	.radio:after {
+		content: "";
+		position: absolute;
+		top: 2.5px;
+		right: 0;
+		left: 1px;
+		height: 8px;
+		width: 8px;
+		margin: auto;
+		display: inline-block;
+		background-color: $blue;
+		transition: 0.4s;
+		opacity: 0;
+		transform: scale(1.5);
+		@include radius;
+	}		
+
+	.radio[check*="true"]:after {
+		opacity: 1;
+		transform: scale(1);
+	}
+	.radio[check*="false"]:after {
+		opacity: 0;
+		transform: scale(2);
+	}
+	//РАДИО 
+
+	.modal-contents {
+		display: block;
+		width: 580px;
+		padding: 60px;
+	}
+
+	.long-970 {
+		display: block;
+		width: 970px;
+		padding: 30px;
+		padding-top: 10px;
+
+		.close-modal{
+			text-align: right;
+		}
+
+		.picture-cell{
+			width:100px;
+			float: left;
+			height: 100px;
+			border: 2px solid $grey25;
+			display: flex;
+
+			img{
+				margin: auto;
+			}
+		}
+
+		.info-items{
+			max-width: 590px;
+			float:left;
+			padding-left: 90px;
+			.items-name{
+				float:left;
+				width: 50%;
+				font-family: $ProximaRegular;
+				a{
+					color:$blue;
+				}
+			}
+
+			.left-text{
+				text-align:left;
+				font-size: 20px;
+				font-family: $ProximaRegular;
+				font-weight: bold;
+			}
+
+			.right-text{
+				text-align:right;
+			}
+
+			.items-information{
+				width: 100%;
+				float:left;
+				font-size: 14px;
+				font-family: $ProximaRegular;
+				.item-colection{
+					width: 70%;
+					float:left;
+					font-size: 14px;
+					font-family: $ProximaRegular;
+					font-weight: bold;
+				}
+				.item-col{
+					width: auto;
+					float:right;
+					font-size: 14px;
+					font-family: $ProximaRegular;
+					font-weight: bold;
+				}
+			}
+
+			.bottom{
+				padding-top: 10px;
+				color:$grey2;
+				font-size: 14px;
+			}
+		}
+
+		.right-cell{
+			display: flex;
+			width:180px;
+			height:100px;
+
+			.price{
+				margin: auto;
+				font-family: $ProximaRegular;
+				font-size: 30px;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.input{
+		height:90px;
+	}
+	.line-right {
+		border-right: 1px solid $grey4;
+	}
+
+	[class*="cell-230"] {
+		width: 100%;
+		max-width: 230px;
+	}
+
+	[class*="cell-600"] {
+		width: 100%;
+		max-width: 600px;
+	}		
+		
+	.left-cell-295 {
+		padding-right: 30px;
+	}
+
+	.right-cell-295 {
+		padding-left: 30px;
+	}
+
+	[class*="right-"] {
+	    float: right;
+	}
+
+	input[type="text"],
+	input[type="password"]	 {
+		outline: 0;
+		border: 1px solid $grey6;
+		display: block;
+		height: 30px;
+		max-width: 100%;
+		width: 200px;
+		padding-left: 5px;
+		@include radius(5px);
+	}
+
+	.compulsory {
+		color:#fd5649;
+	}
+
+	.form-desc,
+	.input-title,
+	input[type="text"],
+	input[type="password"] {
+		font-family: $ProximaRegular;
+		font-size: 14px;
+		color: $grey3;			
+	}
+
+	.input-title {
+		margin-bottom: 5px;
+	}
+}
+// МОДАЛКА
+
+
+.inva_boy{
+	text-align: right;
+	position:fixed;
+	margin-top:-50px;
+	font-size: 18px;
+	right:0;
+	bottom: 0;
+	a{
+		color:$blue;
+		font-size: 12px;
+		margin-top: 5px;
+		line-height: 13px;
+	}
+	.predlozhenie{
+		width: 120px;
+	    float: left;
+	    min-height: 140px;
+	    display: flex;
+	    text-align: left;
+	    line-height: 16px;
+		.middle-auto{
+			margin: auto;
+		}    
+	}
+	img{
+		float:left;
+	}
+}
+.desctop-visible{
+		display: inline-block !important;
+	}
+	.mobile-visible{
+		display: none !important;
+	}
+
+
+@media screen and (max-width: 1100px) and (min-width: 320px) {
+	.row {
+	    margin-right: 0px;
+	    margin-left: 0px;
+	}
+	.inva_boy{
+		display: none;
+	}
+		.desctop-visible{
+		display: none !important;
+	}
+	.mobile-visible{
+		display: block !important;
+	}
+	.sec-lkabinet{
+		.window-tablet {
+			.items_values {
+			    width: 100%;
+			    float: left;
+			    margin-bottom: 30px;
+			    border-bottom: 1px solid;
+			}
+			.cel-tablet{
+				width: 75%;
+				padding-top: 10px;
+				border-bottom: 1px dashed
+			}
+			.text-center{
+				text-align: justify;
+				width: 25%;
+			}
+		}
+		.half {
+		    max-width: 100%;
+		    width: 100%;
+		    padding: 30px;
+		    .up-cell-info{
+				.user-title-cell{
+					width: auto;
+					float: none;
+				}
+		    }
+		}
+		.zakazi-info{
+			width: 20%;
+			i{
+				color:$blue;
+			}
+		}
+		.zakazi-info.active{
+			width: 80%;
+		}
+	}
+	[class*="user-modal"] .input {
+	    height: 60px;
+	}
+	[class*="user-modal"] .line-right {
+	    border-right: 0px solid #666666;
+	}
+	[class*="cell-230"] {
+		width: 100%;
+		max-width: 100% !important;
+	}
+	input[type="text"],
+	input[type="password"]	 {
+		width: 100% !important;
+	}
+
+	[class*="user-modal"] {
+		[class*="right-"] {
+		    float: right;
+		    width: 100%;
+		}
+		.sex-cell {
+		    width: 100%;
+		    float: left;
+		}
+		.user-form-edit .form-title {
+		    font-size: 18px;
+		}
+		.frost {
+		    padding-bottom: 20px;
+		}
+		.mob-320-top{
+			margin-top: 40px;
+		}
+		.dostavka .form-title {
+		    font-size: 20px;
+		    font-weight: bold;
+		}
+		
+	}
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px){
+	[class*="user-modal"] {
+		.t-a-left{
+			text-align: left !important;
+		}
+		.long-970 .info-items {
+		    max-width: 100%;
+		    float: left;
+		    padding-left: 0px;
+		}
+		.long-970 .right-cell {
+		    display: flex;
+		    width: 100%;
+		    height: 70px;
+		}
+		.left-cell-295 {
+		    padding-right: 0px;
+		}
+		.long-970 .info-items .left-text{
+			width: 100%;
+	    	text-align: center;
+		}
+		.long-970 .info-items .items-name {
+		    text-align: center;
+		}
+		.long-970 .info-items .items-information{
+			margin-top: 20px;
+		}
+		.long-970 .info-items .item-colection{
+			text-align: left;
+		}
+		.long-970 .picture-cell{
+			float: none;
+			margin: auto;
+		}
+	}
+	.sec-lkabinet {
+		.half {
+			.up-cell-info {
+				.user-info{
+					width: 100%;
+					height: auto;
+					margin-bottom: 10px;
+					margin-top: 2px;
+				}
+				.user-info-edit{
+					width: 100%;
+					margin-top: 0px;
+					text-align: left;
+				}
+				.user-info-mail{
+					margin-top: 10px;
+				}
+			}
+		}
+		.zakazi-info{
+			width: 20%;
+			i{
+				color:$blue;
+			}
+		}
+		.zakazi-info.active{
+			width: 80%;
+		}
+		.window-tablet {
+			.items_values {
+			    width: 100%;
+			    float: left;
+			    margin-bottom: 30px;
+			    border-bottom: 1px solid;
+			}
+			.cel-tablet{
+				width: 45%;
+				padding-top: 12px;
+				font-size: 12px;
+				border-bottom: 1px dashed
+			}
+			.text-center{
+				text-align: justify;
+				width: 55%;
+				a{
+					font-size: 14px;
+					padding-right: 0px;
+					font-size: 12px;
+				}
+			}
+		}			
+	}	
+
+	
+}
+
+[class*="user-modal"] .modal-contents {
+    display: block;
+    width: 580px;
+    padding: 60px;
+}
+[class*="user-modal"] .frost {
+    width: 100%;
+    float: left;
+    padding-bottom: 60px;
+}
+
+[class*="user-modal"] .bottom-0 {
+    padding-bottom: 0px !important;
+}
+.modal-contents {
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+.modal-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+[class*="user-modal"] [class*="cell-230"] {
+    width: 100%;
+    max-width: 230px;
+}
+
+[class*="user-modal"] .line-right {
+    border-right: 1px solid #666666;
+}
+[class*="left-"] {
+    float: left;
+}
+[class*="user-modal"] [class*="right-"] {
+    float: right;
+}
+.button-2 {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    padding-top: 7px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #5db8de;
+    width: 165px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+.button-container {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+[class^="button-"] {
+    cursor: pointer;
+}
+.button-2:after, .button-3:after, .button-8:after {
+    content: "";
+    display: inline-block;
+    background-image: url(/images/route-button-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    width: 8px;
+    height: 15px;
+}
+[class*="user-modal"] .long-970 {
+    display: block;
+    width: 970px;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px){
+	[class*="user-modal"] {
+		.long-970 .info-items{
+			max-width: 430px;
+		    float: left;
+		    padding-left: 10px;
+		}
+		.long-970 .right-cell {
+		    display: flex;
+		    width: 157px;
+		    height: 100px;
+		}
+		.left-cell-295 {
+		    padding-right: 10px;
+		    border-right: 1px solid #000;
+		}
+	}
+}

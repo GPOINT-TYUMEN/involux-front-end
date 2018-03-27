@@ -1,0 +1,234 @@
+<div class="fix-margin"></div>
+<header>
+	@@include('views/sec-top-nav.html')	
+	@@include('views/sec-cityes-top.html')
+	@@include('views/sec-top-nav-2.html')
+</header>
+<div class="modal sec-auth-reg" self="modal">
+  <div class="modal-wrapper" self="modal">
+    <div class="modal-contents">
+      <div class="close-modal">
+        <img src="images/header/close.png">
+      </div>
+      <form class="container-form-auth">
+        <div class="form-title">
+          Вход для покупателей
+        </div>
+        <div class="form-content">
+          <div class="left-cell-295 line-right">
+            <div class="form-title-2">
+              Войти через профиль в соцсетях
+            </div>
+            <div class="form-desc">
+              Откроется окно подтверждения авторизации, после этого вас автоматически вернут в Involux-kids
+            </div>
+            <div class="social"></div>
+          </div>
+          <div class="right-cell-295">
+            <div class="form-title-2">
+              Войти используя почту и пароль
+            </div>
+            <div class="form-desc">
+              Заполните поля, указанные при регистрации.
+            </div>
+            <div class="left-content inputs">
+              <div class="input">
+                <div class="input-title">
+                  Эл.почта:
+                </div>
+                <input type="text">
+              </div>
+            </div>
+            <div class="right-content inputs">
+              <div class="input">
+                <div class="input-title">
+                  Пароль:
+                </div>
+                <input type="password">
+              </div>
+            </div>
+            <div class="send-form">
+              <div class="button-2">
+                Войти
+              </div>
+              <div class="modalsgo-form">
+                <div class="modalgo-reset-psw">
+                  Забыли пароль?
+                </div>
+                <div class="modalgo-reg-user">
+                  Регистрация
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form class="container-form-reg theme-2"s>
+        <div class="form-title">
+          Регистрация нового пользователя
+        </div>
+        <div class="form-content">
+          <div class="left-cell-295 line-right">
+            <div class="input fix-top">
+              <div class="input-title">
+                Имя
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="text">
+            </div>
+            <div class="input">
+              <div class="input-title">
+                Контактный телефон
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="text" placeholder="+7(___)___-__-__">
+              
+            </div>
+            <div class="input">
+              <div class="input-title">
+                Пароль
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="password">
+              
+            </div>
+          </div>
+          <div class="right-cell">
+            <div class="input fix-top">
+              <div class="input-title">
+                Фамилия
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="text">
+            </div>
+            <div class="input">
+              <div class="input-title">
+                Эл.почта
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="text" placeholder="E-mail">
+              
+            </div>
+            <div class="input">
+              <input-title>
+                Повторите пароль
+                <span class="compulsory">
+                  *
+                </span>
+              </input-title>
+              <input type="password">
+            </div>
+          </div>
+        </div>
+        <div class="politica">
+          <span class="check-politica">
+            <i class="fa fa-check" aria-hidden="true"></i>
+          </span>
+          <div class="desc">
+            Настоящим подтверждаю, что я ознакомлен и согласен с
+            <a href="">
+              условиями политики конфиденциальности.
+            </a>
+          </div>
+        </div>
+        <div class="button-2">
+          Регистрация
+        </div>
+        <div class="right-social"></div>
+      </form>
+      <form class="container-form-resset-password theme-2" style="display: none;">
+        <div class="form-title">
+          Изменить пароль 
+        </div>
+        <div class="form-content">
+          <div class="left-cell-2-295">
+            <div class="input fix-top">
+              <div class="input-title">
+                Старый пароль
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="password">
+              
+            </div>
+            <div class="input">
+              <div class="input-title">
+                Новый пароль
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="password">
+              
+            </div>
+          </div>
+          <div class="right-cell-2-295">
+            <div class="input fix-top" style="opacity: 0;">
+              <div class="input-title">
+                Эл.почта
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="text" placeholder="E-mail" disabled="">
+              
+            </div>
+            <div class="input">
+              <div class="input-title">
+                Повторите пароль
+                <span class="compulsory">
+                  *
+                </span>
+              </div>
+              <input type="password">
+              
+            </div>
+          </div>
+        </div>
+        <div class="button-2">
+          Регистрация
+        </div>
+      </form>
+      <form class="container-form-resset-password-2 theme-3">
+        <div class="form-wrapper">
+          <div class="form-title">
+            Забыли пароль?
+          </div>
+          <div class="form-content">
+            <div class="cell-2-295">
+              <div class="input fix-top">
+                <div class="input-title">
+                  Чтобы восстановить пароль
+                  <div class="br"></div>
+                  введите адрес Вашей эл.почты
+                  <span class="compulsory">
+                    *
+                  </span>
+                </div>
+                <input type="password">
+                
+              </div>
+            </div>
+          </div>
+          <div class="button-2">
+            Восстановить пароль
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+@@include('views/mobile-top-nav.html')
+@@include('views/mobile-left-nav.html')
+

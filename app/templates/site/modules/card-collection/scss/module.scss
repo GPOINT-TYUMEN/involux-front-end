@@ -1,0 +1,1296 @@
+$grey: #b9b9b9;
+$grey2: #747373; 
+$grey3: #504e4e;
+$grey4: #666666;
+$grey5: #444444;
+$grey6: #dadada;
+$grey7: #e8e8e8;
+$grey8: #f2f3f5;
+$grey9: #d8d8d8;
+$grey10: #f3f3f3;
+$grey11: #dbdbdb;
+$grey12: #545454;
+$grey13: #a4a4a4;
+$grey14: #6b6b6b;
+$grey15: #676769;
+$grey16: #4f4f4f;
+$grey17: #3c3c3c;
+$grey18: #5f5f5f;
+$grey19: #d6d6d6;
+$grey20: #393939;
+$grey21: #f1eef1;
+$grey22: #868686;
+$grey23: #dddddd;
+$grey24: #616161;
+$grey25: #eeeeee;
+$grey26: #e9eaec;
+$grey27: #c6c7c9;
+$grey28: #999999;
+
+$blue: #5db8de; 
+$blue2: #385766;
+$blue3: #d8eef7;
+$blue4: #4e9dbe;
+$blue5 : #4683c4;
+$blue6 : #5eb8de;
+$black2: #231c1a;
+$BaseColor: #62b445;
+$BaseFont: #000;
+$BaseFont2: #fff;
+$BaseFont3: #666;
+$BaseFontUrl: #0725aa;
+$rose: #ea7893;
+$red2: #fe3c3c;
+$red3: #d60000;
+$orange: #e8b331;
+
+body {
+	background-color: $grey23;
+}
+
+
+
+// Модальное-окно
+.modal-window-shadow{
+	position: absolute;
+	display: flex;
+	display: none;
+	height: 100%;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	background: rgba(0,0,0,0.5);
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: #5db8de;
+}
+
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+	background-color: #5db8de;
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	background-color: #5db8de;
+} 
+
+.modal-window{
+	width: 450px;
+	height: 600px;
+	background: $BaseFont2;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-right: 30px;
+	margin: auto;
+	@include radius(20px);
+	.close{
+		width: 100%;
+		height: 20px;
+		text-align: right;
+		font-size: 30px;
+		float: left;
+		margin-bottom: 20px;
+		cursor: pointer;
+	}
+	.chat-text{
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+		height: auto;
+		text-align: center;
+		font-size: 18px;
+		float: left;
+		font-family: $ProximaRegular;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	.max-enter-img{
+		font-family: $ProximaRegular;
+		width: 100%;
+		height: 10px;
+		font-style: italic;
+		font-weight: bold;
+	}
+	.input-sec{
+		width: 100%;
+		float: left;
+		position: relative;
+		margin-top: 20px;
+		.input-name{
+			font-family: $ProximaRegular;
+			font-size: 18px;
+			font-weight: bold;
+			height: 30px;
+		}
+		input{
+			width: 100%;
+			height: 50px;
+			@include radius(10px);
+			border:1px solid $BaseFont;
+		}
+		.button-img{
+			position: absolute;
+			cursor: pointer;
+			bottom: 0px;
+			right: 0px;
+			width: 200px;
+			height: 50px;
+			@include radius(10px);
+			background: $grey20;
+			display: flex;
+			span{
+				margin: auto;
+				color:$BaseFont2;
+				font-family: $ProximaRegular;
+				font-size: 15px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+// Модальное-окно
+
+
+
+
+
+.left-colum{
+	width: 657px;
+	min-height: 10px;
+	float: left;
+	position: relative;
+	.all-items-collection{
+		background: $blue;
+		width: 220px;
+		height: 40px;
+		position: absolute;
+		@include radius(10px);
+		transform:rotate(-90deg);
+		left:-135px;
+		top:77%;
+		.items{
+			display: flex;
+			width: 100%;
+			height:100%;
+			text-decoration: none;
+			cursor: pointer;
+			span{
+			color:$BaseFont2;
+			font-family: $ProximaRegular;
+			font-size: 15px;
+			margin:auto;
+			border: none;
+			outline: 0;
+			}
+		}
+	}
+	.zig{
+		width: 100%;
+		height: 40px;
+		float: left;
+		margin-top: 10px;
+		@include radius(10px);
+		text-align: center;
+		display: flex;
+		.all-itemscollection{
+			background: $blue;
+			margin: auto;
+			width: 220px;
+			height: 40px;
+			@include radius(10px);
+			.items{
+				display: flex;
+				width: 100%;
+				height:100%;
+				text-decoration: none;
+				cursor: pointer;
+				span{
+				color:$BaseFont2;
+				font-family: $ProximaRegular;
+				font-size: 15px;
+				margin:auto;
+				border: none;
+				outline: 0;
+				}
+			}
+		}
+	}
+}
+.right-colum{
+	width: 425px;
+	min-height: 10px;
+	float: right;
+}
+.top-info{
+	min-height:65px;
+	float: left;
+	display: flex;
+	width: 100%;
+	.all-items{
+		width: 100%;
+		height: 65px;
+		display: flex;
+		float:left;
+		span{
+			margin: auto;
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-family: $ProximaRegular;
+		}
+	}
+	.pagination{
+		width: 30%;
+		height: 65px;
+		text-align: left;
+		display: flex;
+		float:left;
+		a,span{
+			margin: auto;
+			margin-left: 0px;
+			font-weight: bold;
+			font-family: $ProximaRegular;
+		}
+		a{
+			color: #000;
+		}
+		span{
+			color:$blue6;
+		}
+	}
+	.name-item{
+		width: 50%;
+		height: 65px;
+		display: flex;
+		float:left;
+		span{
+			margin: auto;
+			font-size: 25px;
+			font-weight: bold;
+			font-family: $ProximaRegular;
+		}
+	}
+	.articule{
+		width: 20%;
+		height: 65px;
+		display: flex;
+		float:left;
+		span{
+			margin: auto;
+			color: $blue6;
+			font-family: $ProximaRegular;
+			margin-right: 0px;
+		}
+	}
+	button{
+		font-family: $ProximaRegular;		
+		font-weight: bold;
+		font-size: 12px;		
+		width: 100px;
+		height: 37px;
+		margin: auto;
+		background: $BaseFont2;
+		border: none;
+		outline: 0;
+		@include radius(5px);
+		border-bottom: 3px solid $grey;
+	}
+	.active{
+		background: $blue;
+		color: $BaseFont2;
+		border-bottom: 3px solid $blue4;
+	}
+}
+.item-gallery{
+	min-height:500px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	background: $BaseFont2;
+	@include radius(10px);
+	.item-gallery-bg{
+		height: 350px;
+		position: relative;
+		overflow: hidden;
+		// display: flex;
+		.wrapper-photo {
+			// margin:auto;
+			position: relative;
+			overflow: hidden;
+			@include radius(10px 10px 0px 0px);
+			img{
+				width: 100%;
+			}
+			.edit-tool-sec {
+			position: absolute;
+			top: 130px;
+			left: 60px;
+			width: 150px;
+			height: 200px;
+
+		  		.edit-tool {
+		  			animation: nev 1s infinite alternate;
+		  			cursor: pointer;
+		  		}
+
+		  		ul {
+		  			background: rgba(255,255,255,0.5);
+		  			padding-left: 0px;
+		  			@include radius(5px);
+		  			li{
+		  				list-style-type: none;
+		  				display: flex;
+		  				margin-top: 3px;
+		  				@include radius(5px);
+		  			}
+		  			li:hover{
+		  				background: rgba(255,255,255,0.8);
+		  			}
+
+	  				span {
+	  					float: left;
+	  					margin: auto 0;
+	  					margin-left: 10px;
+	  					cursor: pointer;
+	  				}	
+
+					span:nth-child(1) {
+						width: 15px;
+						height: 15px;
+						@include radius;
+					}
+
+					span:nth-child(2) {
+
+					}
+		  		}
+
+			}
+		}
+
+		.action{
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			right: 10px;
+			top:10px;
+		}
+	}
+
+	.horizont-slider {
+		height: 150px;
+		display: flex;
+		padding-top: 0px;
+	}
+	.section-slder{
+		width:510px;
+		margin: auto;
+		height: 150px;
+
+		.gallery-content{
+			float: left;
+			height: 130px;
+			width: 100%;
+			.gallery-wrapper{
+				float: left;
+				height: 130px;
+				width: 100%;
+				.gallery-bg{
+					float: left;
+					height: 130px;
+					width: 120px;
+					text-align: center;
+					position: relative;
+					img{
+						border:3px solid $grey23;
+						cursor: pointer;
+					}
+					.edit-tool{
+						position: absolute;
+						top: 80px;
+						left: 70px;
+						animation: nev 1s infinite alternate;
+				  		border: none;
+				  		cursor: pointer;
+					}
+					@keyframes nev {
+					  0%  {
+					    transform: scale(0.8);
+					  }
+
+					  100% {
+					    transform: scale(1);
+					  }
+					}
+					.title{
+						text-align: center;
+						width: 100%;
+						height: 30px;
+						font-family: $ProximaRegular;
+					}
+				}
+
+				.gallery-slider{
+					float: left;
+					height: 130px;
+					width: 100%;
+					text-align: center;
+					.gallery-slider-title{
+						text-align: center;
+						padding-top: 7px;
+						width: 100%;
+						height: 30px;
+						font-family: $ProximaRegular;
+						text-transform: uppercase;
+					}
+					.gallery-slider-wrapper{
+						width: 100%;
+						text-align: center;
+						position: relative;
+						border-bottom: 1px solid $grey;
+						border-top: 1px solid $grey;
+						padding-top: 15px;
+						.gallery-item{
+							display: inline-block;
+							width: 90px;
+							height: 75px;
+							img{
+								cursor: pointer;
+								padding-bottom: 10px;
+								transition: 0.4s;
+							}
+							img:hover{
+								transform: translate(0,-5px);
+								transition: 0.4s;
+							}
+							.gallery-name-color{
+								float: left;
+								font-family: $ProximaRegular;
+								width: 100%;
+								text-align: center;
+								line-height: 13px;
+								font-size: 13px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.all-item-gallery{
+	min-height:150px;
+	float: left;
+	width: 100%;
+	background: $BaseFont2;
+	@include radius(10px);
+	.horizont-slider{
+	height: 150px;
+	display: flex;
+	}
+	.section-slder{
+		width:100%;
+		margin: auto;
+		height: 150px;
+		display: flex;
+		.gallery-content{
+			float: left;
+			margin: auto;
+			width: 100%;
+			.gallery-wrapper{
+				float: left;
+				width: 100%;
+				.gallery-items{
+					float: left;
+					width: 100%;
+					text-align: center;
+					position: relative;
+					.route-right-v {
+						right: 10px;
+					    font-size: 30px;
+					    color: $blue;
+					    position: absolute;
+					    cursor: pointer;
+					    top: 30%;
+					    z-index: 1000;
+					}
+					.route-left-v {
+						left: 10px;
+					    font-size: 30px;
+					    color: $blue;
+					    position: absolute;
+					    cursor: pointer;
+					    top: 30%;
+					    z-index: 1000;
+					}
+					.route-right-vv {
+						right: 75px;
+					    font-size: 30px;
+					    color: $blue;
+					    position: absolute;
+					    cursor: pointer;
+					    display: none;
+					    top: 30%;
+					    z-index: 1000;
+					}
+					.route-left-vv {
+						left: 75px;
+					    font-size: 30px;
+					    cursor: pointer;
+					    display: none;
+					    color: $blue;
+					    position: absolute;
+					    top: 30%;
+					    z-index: 1000;
+					}
+					.price{
+						text-align: left;
+						width: 100%;
+						color:$blue;
+						height: 20px;
+						font-size: 12px;
+						font-weight: bold;
+						font-family: $ProximaRegular;
+					}
+					.name-t{
+						font-family: $ProximaRegular;
+						height: 30px;
+						display: flex;
+						span{
+							margin: auto;
+							margin-left: 0px;
+							line-height: 11px;
+							font-size: 11px;
+							text-align: left;
+						}
+					}
+					.gallery-items-wrapper{
+						width: 100%;
+						text-align: center;
+						padding-top: 5px;
+						position: relative;
+						
+						.gallery-item{
+							display: inline-block;
+							width: 100px;
+							overflow: hidden;
+							margin-left: 10px;
+							margin-right: 10px;
+							img{
+								border:1px solid $grey23;
+								cursor: pointer;
+							}
+						}
+						.gallery-item-col{
+							display: inline-block;
+							width: 300px;
+							overflow: hidden;
+							.store{
+								float: left;
+								width: 140px;
+								margin-left: 10px;
+								min-height: 10px;
+								.title{
+									height: 20px;
+									font-family: $ProximaRegular;
+									text-align: left;
+									text-transform: uppercase;
+									font-size: 15px;
+								}
+								.txt{
+									height: 80px;
+									font-family: $ProximaRegular;
+									text-align: left;
+									font-size: 10px;
+									line-height: 10px;
+								}
+							}
+							img{
+								border:1px solid $grey23;
+								cursor: pointer;
+								float: left;
+								width: 150px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.all-info-sec{
+	height:500px;
+	float: left;
+	width: 100%;
+	background: $BaseFont2;
+	@include radius(10px);
+	padding-left: 20px;
+	padding-right: 20px; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+	.shadow{
+		width: 85%;
+		height: 30px;
+		background: linear-gradient(to top, #fff, rgba(255,255,255,0.0));
+		position: absolute;
+		margin-top: -30px;
+	}
+}
+.wrapper-info {
+	height: 100%;
+	width: 100%;
+	padding-right: 5px;
+	padding-left: 5px;
+
+	.materials_desc{
+		text-align: left;
+		font-size: 14px;
+		line-height: 14px;
+		font-family: $ProximaRegular;
+	}
+	.photip{
+		width: 130px;
+		height: 130px;
+		display: inline-block;
+		padding: 4px;
+		border: 3px solid #fff;
+		margin-bottom: 14px;
+		border-radius: 5px;
+		margin-left: 7px;
+		margin-right: 7px;
+		img{
+			height: 100%;
+			border-radius: 5px;
+		}
+	}
+	.active{
+		border: 3px solid #5eb8de !important;
+	}
+	.advantage-information{
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		height: auto;
+		position: relative;
+		.wrapper-info-advantage{
+			height: 100%;
+			width: 25%;
+			float: left;
+			position: absolute;
+			display: flex;
+			
+			img{
+				margin: auto;
+				margin-left: 0px;
+			}
+			span{
+				line-height: 12px;
+				font-family: $ProximaRegular;
+				font-size: 12px;
+				font-weight: bold;
+				padding-right: 20px;
+				text-align: right;
+			}
+		}
+		.wrapper-info-advantage-txt{
+			min-height: 60px;
+			width: 100%;
+			padding-left: 95px;
+			line-height: 12px;
+			text-align: left;
+			font-family: $ProximaRegular;
+			font-size: 12px;
+			float: left;
+		}
+	}	
+}
+
+.top-name{
+	float: left;
+	width: 100%;
+	position: relative;
+	.name-item{
+		width: 60%;
+		float: left;
+		font-family: $ProximaRegular;
+		text-align: left;
+		font-size: 21px;
+		font-weight: bold;
+		text-align: left;
+	    bottom: 0;
+	    left: 0;
+	}
+	.articule{
+		width: 40%;
+		float: left;
+		font-family: $ProximaRegular;
+		text-align: right;
+		color:$blue;
+		position: absolute;
+	    bottom: 0;
+	    right: 5px;
+	}
+}
+.top-price{
+	float: left;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #000;
+	position: relative;
+	.price-item{
+		width: 50%;
+		float: left;
+		font-family: $ProximaRegular;
+		font-size: 22px;
+		font-weight: bold;
+		text-align: left;
+		position: absolute;
+	    bottom: 0;
+	    left: 0;
+	}
+	.sale-price{
+		width: 50%;
+		font-family: $ProximaRegular;
+		float: left;
+		text-align: right;
+		font-size: 21px;
+		font-weight: bold;
+		position: absolute;
+	    bottom: 0;
+	    right: 5px;
+	}
+	.old-price{
+		width: 50%;
+		font-family: $ProximaRegular;
+		float: left;
+		color: $grey24;
+		text-align: right;
+		font-size: 15px;
+		font-weight: bold;
+		position: absolute;
+	    bottom: 23px;
+	    text-decoration: line-through $red3;
+	    right: 0px;
+	}
+}
+.all-sale{
+	width: 100%;
+	min-height: 20px;
+	text-align: right;
+	font-family: $ProximaRegular;
+	padding-right: 5px;
+	float: left;
+	font-size: 10px;
+	span{
+		margin-left:7px;
+	}
+	a{
+		font-size: 15px;
+	}
+}
+.all-sales{
+	width: 50%;
+	min-height: 30px;
+	text-align: right;
+	font-family: $ProximaRegular;
+	padding-right: 5px;
+	position: relative;
+	float: right;
+	span{
+		font-size: 16px;
+		color:$blue;
+		width: 100px;
+		text-decoration: underline;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.mdl{
+		float: left;
+		display: none;
+		z-index: 9999;
+		width: 100%;
+	    top: 30px;
+	    position: absolute;
+	    background: $grey6;
+	    @include radius(7px);
+	    padding: 5px;
+	    cursor: pointer;
+	    span{
+	    	float: left;
+	    	width: 50%;
+	    	height: 30px;
+	    	text-align: left;
+	    	color: $BaseFont;
+	    	text-decoration: none;
+	    	font-weight: normal;
+	    }
+	    span:nth-child(2n){
+	    	float: left;
+	    	width: 50%;
+	    	height: 30px;
+	    	text-align: right;
+	    	color: $BaseFont;
+	    	text-decoration: none;
+	    	font-weight: normal;
+	    }
+	    .btn-tov {
+		    width: 150px;
+		    margin: auto;
+		    margin-top: 10px;
+		    height: 30px;
+		    border: none;
+		    display: flex;
+		    outline: 0;
+		    background: #5db8de;
+		    -webkit-border-radius: 5px;
+		    -moz-border-radius: 5px;
+		    border-radius: 5px;
+		    -khtml-border-radius: 5px;
+		    span{
+		    	color:$BaseFont2;
+		    	text-decoration: none;
+		    	font-size: 14px;
+		    	width: 100%;
+		    	height: auto;
+		    }
+		}
+	}
+}
+.opisanie-item{
+	float: left;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	.info{
+		width: 310px;
+		min-height: 10px;
+		margin:auto;
+		.properties{
+			min-height: 20px;
+			width: 100%;
+			float: left;
+			font-family: $ProximaRegular;
+			font-size: 14px;
+			.property{
+				width: 60%;
+				float:left;
+				color:$blue;
+			}
+			.value{
+				width: 40%;
+				float:left;
+				a{
+					color:#000;
+					text-decoration: underline $grey24;
+				}
+			}
+		}
+	}
+}
+.sec-button{
+	float: left;
+	width: 100%;
+	height: auto;
+	.sec-write,.sec-choice{
+		width: 50%;
+		height: 40px;
+		display: flex;
+		float: left;
+		position: relative;
+		font-family: $ProximaRegular;
+		font-size: 11px;
+		img{
+			position: absolute;
+			bottom:1px;
+		}
+		.mdl{
+			float: left;
+			display: none;
+			z-index: 9999;
+			width: 100%;
+		    top: 30px;
+		    position: absolute;
+		    background: $grey6;
+		    @include radius(7px);
+		    padding: 5px;
+		    cursor: pointer;
+		    span{
+		    	float: left;
+		    	width: 100%;
+		    }
+		}
+		.zero-padding{
+			margin-left: 0px;
+		}
+		span{
+			margin: auto;
+			margin-top: 5px;
+			font-family: $ProximaRegular;
+			p{
+				cursor: pointer;
+			}
+			sup{
+				font-size: 10px;
+				color:$blue;
+			}
+			img{
+				margin: right;
+				position: relative;
+				cursor: pointer;
+			}
+		}
+	}
+	.btn-write{
+		width: 150px;
+		margin:auto;
+		height: 30px;
+		border:none;
+		display: flex;
+		outline:0;
+		background: $grey28;
+		@include radius(5px);
+		span{
+			margin: auto;
+			font-size:15px;
+			font-weight: bold;
+			color: $BaseFont2;
+			font-family: $ProximaRegular;
+		}
+	}
+	.btn-tov{
+		width: 150px;
+		margin:auto;
+		height: 30px;
+		border:none;
+		display: flex;
+		outline:0;
+		background: $blue;
+		@include radius(5px);
+		span{
+			margin: auto;
+			font-size:15px;
+			font-weight: bold;
+			color: $BaseFont2;
+			font-family: $ProximaRegular;
+		}
+	}
+}
+.dop-info-tr{
+	float: left;
+	width: 100%;
+	min-height: 100px;
+	.line-tr{
+		width: 100%;
+		height: 60px;
+		border-bottom: 1px solid $grey;
+		font-family: $ProximaRegular;
+		.ask-img{
+			float: right;
+			height: 35px;
+			display: flex;
+			margin-right: 5px;
+		}
+		img{
+			margin:auto;
+		}
+		.download{
+			float:left;
+			height: 35px;
+			width: 50%;
+			line-height: 15px;
+			display: flex;
+			font-size: 12px;
+			span{
+				margin: auto;
+				margin-left: 30px;
+			}
+			a{
+				color:$grey24;
+				text-decoration: underline;
+				margin: auto;
+				margin-left: 0px;
+			}
+			img{
+				float:left;
+				margin-left: 0px;
+				// margin-right:5px;
+			}
+		}
+	}
+	.line-tr-all{
+		width: 100%;
+		min-height: 35px;
+		font-size:14px;
+		line-height: 16px;
+		font-family: $ProximaRegular;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}	
+}
+
+.mobile{
+	display: none;
+}
+.desctop{
+	display: block;
+}
+.pagination-m{
+	display: none;
+}
+
+@media screen and (max-height: 565px) and (min-height: 320px){
+.all-items-collection{
+	display: none;
+}
+.left-colum {
+	.zig{
+		display: block;
+	}
+}
+}
+@media screen and (max-height: 4000px) and (min-height: 565px){
+.all-items-collection{
+	display: block;
+}
+.left-colum {
+	.zig{
+		display: none;
+	}
+}	
+}
+@media screen and (max-height: 4000px) and (min-height: 565px){
+.all-items-collection{
+	display: block;
+}
+.left-colum {
+	.zig{
+		display: none;
+	}
+}	
+}
+@media screen and (max-width: 1100px) and (min-width: 320px){
+.right-colum,.left-colum{
+	width: 100%;
+}
+.all-items-collection{
+	display: none;
+}
+.gallery-bg{
+	display: none;
+}
+
+.section-slder {
+	width: 100% !important;
+}
+
+.item-gallery .section-slder .gallery-content .gallery-wrapper .gallery-slider{
+	width: 100%;
+}
+.top-info{
+	display: block;
+	min-height: 50px;
+	.pagination{
+		display: none;
+	}
+	.pagination-m{
+		width: 30%;
+		height: 50px;
+		padding-top: 10px;
+		text-align: left;
+		display: block;
+		float:left;
+		a,span{
+			margin: auto;
+			margin-left: 0px;
+			font-weight: bold;
+			font-family: $ProximaRegular;
+		}
+		a{
+			color: #000;
+			font-size: 20px;
+		}
+		span{
+			color:$blue6;
+		}
+	}
+	.name-item{
+		width: 70%;
+	    height: auto;
+	    display: flex;
+	    float: right;
+	    span{
+	    	margin: auto;
+	    	margin-right: 0px;
+		    font-size: 15px;
+		    font-weight: bold;
+		    font-family: $ProximaRegular;
+	    }
+	}
+	.articule {
+	    width: 70%;
+	    height: auto;
+	    display: flex;
+	    float: right;
+	}
+}
+span.route-right-vv {
+	right: 10px !important;
+}
+span.route-left-vv {
+	left: 10px !important;
+}
+span.route-right-v {
+	right: 10px !important;
+}
+span.route-left-v {
+	left: 10px !important;
+}
+.mobile{
+	display: block !important;
+	margin-top: 10px;
+}
+.desctop{
+	display: none;
+}
+.mobile .top-info{
+	min-height: 20px;
+}
+.mobile .top-info button{
+	width:100%;
+	text-transform: uppercase;
+	border-bottom: 1px solid $blue;
+}
+.item-gallery .section-slder .gallery-content .gallery-wrapper .gallery-items{
+	width: 100%;
+}
+.top-name{
+	display: none;
+}
+.all-info-sec{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.sec-button .sec-write, .sec-button .sec-choice{
+	width: 100%;
+	height: 30px;
+}
+.dop-info-tr .line-tr .download{
+	width: 240px;
+}
+.sec-button{
+	margin-top: 20px;
+	height: auto;
+}
+.sec-text{
+	font-size: 13px;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	a{
+		color: $blue;
+	}
+}
+.item-gallery {
+	background: none;
+	.item-gallery-bg{
+		background: $BaseFont2;
+		@include radius(10px);
+	}
+}
+.color-edit{
+	float: left;
+	width: 100%;
+	height: 120px;
+	font-family: $ProximaRegular;
+	font-size: 13px;
+	.image-color{
+		width: 100px;
+		float: left;
+		display: flex;
+		position: relative;
+		@include radius(10px);
+		height: 100px;
+		background: $BaseFont2;
+		margin-right: 20px;
+		img{
+			margin: auto;
+		}
+		.edit-tool{
+		position: absolute;
+		top: 60px;
+		left: 60px;
+		animation: nev 1s infinite alternate;
+  		border: none;
+		}
+	}
+	span{
+		font-size:25px;
+		font-family: $ProximaRegular;
+	}
+}
+
+.wrapper-info{
+	.photip{
+		width: 110px;
+		height: 110px;
+		display: inline-block;
+		padding: 4px;
+		border: 3px solid #fff;
+		margin-bottom: 14px;
+		border-radius: 5px;
+		margin-left: 7px;
+		margin-right: 7px;
+		img{
+			height: 100%;
+			border-radius: 5px;
+		}
+	}
+	.active{
+		border: 3px solid #5eb8de !important;
+	}
+	.advantage-information{
+		float: left;
+		width: 100%;
+		margin-top: 20px;
+		height: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		position: relative;
+		.wrapper-info-advantage{
+			height: 100%;
+			width: 100%;
+			padding: 10px;
+			padding-bottom: 20px;
+			float: left;
+			position: static;
+			display: flex;
+			
+			img{
+				margin: auto;
+			}
+			span{
+				line-height: 12px;
+				font-family: $ProximaRegular;
+				font-size: 12px;
+				font-weight: bold;
+				padding-right: 20px;
+				text-align: right;
+			}
+		}
+		.wrapper-info-advantage-txt{
+			min-height: 60px;
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+			line-height: 12px;
+			text-align: justify;
+			font-family: $ProximaRegular;
+			font-size: 12px;
+			float: left;
+		}
+	}
+}
+}
+
+

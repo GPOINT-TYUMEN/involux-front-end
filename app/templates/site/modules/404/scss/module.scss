@@ -1,0 +1,71 @@
+.sec-error {
+	$grey: #b9b9b9;
+	$grey2: #747373; 
+	$grey3: #504e4e;
+	$grey4: #666666;
+	$grey5: #444444;
+	$grey6: #dadada;
+	$grey7: #e8e8e8;
+	$grey8: #f2f3f5;
+	$grey9: #d8d8d8;
+	$grey10: #f3f3f3;
+	$grey11: #dbdbdb;
+	$grey12: #545454;
+	$grey13: #a4a4a4;
+	$grey14: #6b6b6b;
+	$grey15: #676769;
+	$grey16: #4f4f4f;
+	$grey17: #3c3c3c;
+	$grey18: #5f5f5f;
+	$grey19: #d6d6d6;
+	$grey20: #393939;
+	$grey21: #f1eef1;
+	$grey22: #868686;
+	$grey23: #dddddd;
+	$grey24: #616161;
+	$grey25: #eeeeee;
+	$grey26: #e9eaec;
+	$grey27: #c6c7c9;
+
+	$blue: #5db8de; 
+	$blue2: #385766;
+	$blue3: #d8eef7;
+	$blue4: #4e9dbe;
+	$blue5 : #4683c4;
+	$blue6 : #5eb8de;
+	$black2: #231c1a;
+	$BaseColor: #62b445;
+	$BaseFont: #000;
+	$BaseFont2: #fff;
+	$BaseFont3: #666;
+	$BaseFontUrl: #0725aa;
+	$rose: #ea7893;
+	$red2: #fe3c3c;
+	$orange: #e8b331;
+
+	@include bg('error/error_page.png');
+	background-color: $grey8;
+	padding-bottom: 95px;
+
+	.error-warning{
+	    color: $blue6;
+	    font-weight: bold;
+	    margin-bottom: 30px;
+	    margin-top: 50px;
+	    font-size: 30px;
+	    text-align: center;
+	}
+
+
+	a[class^="button-"]{
+		    display: inline-block;
+		    text-align: center;
+		    padding-top: 7px;
+		    font-size: 18px;
+		    text-decoration: none;
+		    background-color: $blue;
+		    width: 187px;
+		    height: 40px;
+		    @include radius(5px);
+	}
+}

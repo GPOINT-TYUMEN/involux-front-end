@@ -1,0 +1,25 @@
+$OpenSans: 'OpenSans';
+$OpenSansItalic: 'OpenSans-Italic';
+$OpenSansBold: 'OpenSans-Bold';
+$OpenSansSemibold: 'OpenSans-Semibold';
+
+$ProximaRegular: 'ProximaNova-Regular';
+$ProximaSemiBold: 'ProximaNova-Semibold';
+$ProximaBold: 'ProximaNova-Bold';
+$ProximaThin: 'ProximaNovaT-Thin';
+
+$AcromExtraBold: 'Acrom-ExtraBold';
+$AcromExtraLight: 'Acrom-Light';
+
+@include fonts($OpenSans, 'open-sans/');
+@include fonts($OpenSansItalic, 'open-sans/');
+@include fonts($OpenSansBold, 'open-sans/');
+@include fonts($OpenSansSemibold, 'open-sans/');
+
+@include fonts($ProximaRegular, 'proxima/');
+@include fonts($ProximaSemiBold, 'proxima/');
+@include fonts($ProximaBold, 'proxima/');
+@include fonts($ProximaThin, 'proxima/');
+
+@include fonts($AcromExtraBold, 'acrom/')
+@include fonts($AcromExtraLight, 'acrom/')

@@ -1,0 +1,21 @@
+@@include('header.html', {
+	"title": "Карточка товара",
+	"desc": "",
+	"h1": "",
+	"css": [
+		"item-card"
+	]
+})	
+
+@@include('site/modules/header/module.html')
+<div class="modules">
+	@@include('site/modules/item-card/module.html')
+</div>
+@@include('site/widgets/photoswipe/widget.html')
+
+
+@@include('footer.html', {
+	"js": [
+		"item-card"
+	]
+})

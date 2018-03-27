@@ -1,0 +1,16 @@
+@import "../libs/functions.scss";
+@import "../fonts/fonts.scss";
+
+
+//> OVERALL
+@import "overall/index";
+//< OVERALL  
+
+@import "../templates/site/plugins/owl/scss/plugin.scss";
+@import "../templates/site/plugins/scroll/scss/plugin.scss";
+
+
+@import "../templates/site/widgets/photoswipe/scss/widget.scss";
+
+@import "../templates/site/modules/header/scss/module.scss";
+@import "../templates/site/modules/item-card/scss/module.scss";

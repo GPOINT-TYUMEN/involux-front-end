@@ -1,0 +1,18 @@
+@import "../libs/functions.scss";
+@import "../fonts/fonts.scss";
+
+//> PLUGINS
+@import "../templates/site/plugins/owl/scss/plugin.scss";
+//< PLUGINS
+
+//> OVERALL
+@import "overall/index";
+//< OVERALL  
+
+@import "../templates/site/modules/header/scss/module.scss";
+@import "../templates/site/modules/sec-bunner/scss/module.scss";
+@import "../templates/site/modules/sec-collection/scss/module.scss";
+@import "../templates/site/modules/sec-shop/scss/module.scss";
+@import "../templates/site/modules/sec-projects-clients/scss/module.scss";
+@import "../templates/site/modules/sec-mebel-groups/scss/module.scss";
+@import "../templates/site/modules/sec-footer/scss/module.scss";
